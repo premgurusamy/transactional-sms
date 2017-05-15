@@ -507,7 +507,11 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 .footer-copyright-row{
   padding: 24px 0 ;
 }
-.footer-copyright-row p, a{
+.footer-copyright-row p{
+  color: rgba(105,105,105,1);
+  font-size: 0.9em;
+}
+.footer-copyright-row a{
   color: rgba(105,105,105,1);
   font-size: 0.9em;
 }
