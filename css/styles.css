@@ -1,6 +1,10 @@
 
 /*body section design starts here*/
 /*Global Framework*/
+
+a:hover{
+  text-decoration: none;
+}
 .hire-me-column-container{
   display: flex;
   align-items: center;
@@ -42,11 +46,11 @@
 .clipboard-btn{
   border-radius: 0px;
   font-weight: 300;
-  background-color: rgba(229,69,69,1);
+  background-color: rgba(40,111,189,1);
   transition: all 0.3s ease-in;
 }
 .clipboard-btn:hover{
-  background-color: rgba(249, 80, 80, 1);
+  background-color: rgba(40,111,189,1);
   -o-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.2));
   -webkit-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.2));
 }
@@ -132,7 +136,7 @@ body{
   transition: all 0.3s ease-in;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color:rgba(229,69,69,1);
+    background-color:rgba(40,111,189,1);
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus,
@@ -151,7 +155,7 @@ body{
   color: rgba(55,55,55,0.5) !important;
 }
 .navbar-brand img{
-  height: 40px;
+  height: 32px;
 }
 .sign-up-button {
   color: rgba(0,0,0,.5) ;
@@ -456,19 +460,80 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
   font-weight: 300;
 }
 /*****#######Footer Container Style Starts Here######*******/
-
-.footer-copyright-content{
-
-  padding:30px 0;
+.footer-fluid-container{
+  background-color: rgba(240,240,240,1);
 }
-.footer-copyright-content a{
-  text-decoration:none;
-  color: rgba(100,100,100,1);
+.footer-content-row{
+  border-bottom: 1px solid rgba(150,150,150,1);
+}
+.footer-content-column{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.footer-content-row p{
+  font-size: 0.9em;
+  color: rgba(105,105,105,1);
+}
+.footer-logo{
+  margin-bottom: 24px;
+}
+.badge-footer-hiring{
+  background-color: rgba(40,189,147,1);
+  margin-left: 4px;
+  color: white;
+  border-radius: 2px;
+  font-weight: 400;
+}
+.footer-social-link{
+  margin-right: 24px;
+  color: rgba(105,105,105,1);
+}
+.footer-link-header{
+  font-weight: bold;
+  color: rgba(105,105,105,1);
+}
+.footer-link{
+  margin-top: 24px;
+}
+.footer-link a{
+  color: rgba(105,105,105,1);
+}
+.footer-link a:hover{
+  text-decoration: none;
+}
+.footer-copyright-link{
+  margin-right: 24px;
+}
+.footer-copyright-row{
+  padding: 24px 0 ;
+}
+.footer-copyright-row p, a{
+  color: rgba(105,105,105,1);
+  font-size: 0.9em;
 }
 /*****#######Mobile Device Style######*******/
 @media only screen and (min-device-width : 320px) and (max-device-width : 750px) {
   /*main page*/
-
+  /*### Hero Section ####*/
+  .hero-content .hero-head-text{
+    margin-top: 110px;
+    font-size: 2em;
+    line-height: 1.3em;
+    font-weight: 600;
+    color: rgba(68,68,68,1);
+  }
+  .hero-input-container{
+    margin-top: 12px;
+  }
+  /*###Feature Section ###*/
+  .feature-section-container{
+    margin-top: 30px;
+  }
+  /*### Footer Section ####*/
+  .footer-content-column{
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
   /*hire me page*/
   .hire-me-column-container{
     display:flex;
