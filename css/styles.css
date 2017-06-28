@@ -127,14 +127,14 @@ h1,h2,h3,h4,h5{
   border: none;
 }
 .navbar-default .navbar-nav > li > a{
-  color:rgba(0,0,0,.7);
+  color:rgba(255,255,255,1);
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:hover {
-  color: rgba(40,189,147,1) !important;
+  color: rgba(255,255,255,.6) !important;
   transition: all 0.3s ease-in;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color:rgba(40,189,147,1);
+    background-color:rgba(255,255,255,1);
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus,
@@ -153,14 +153,21 @@ h1,h2,h3,h4,h5{
   background-color: transparent;
 
 }
+.navbar-brand i{
+  padding-right:12px;
+}
+.navbar-brand{
+  color: rgba(255,255,255,1)!important;
+}
 .navbar-brand img{
-  height: 32px;
+  height: 36px;
 }
 .sign-up-button {
   font-weight: bold;
   transition: all 0.2s ease-in;
   border-radius:2px;
-  border: 1px solid rgba(40,189,147,1);
+  color: rgba(255,255,255,1);
+  border: 1px solid rgba(255,255,255,1);
 
 }
 .sign-up-button:hover{
@@ -169,7 +176,13 @@ h1,h2,h3,h4,h5{
   transition: all 0.2s ease-in;
   background-color: rgba(40,189,147,1);
 }
+header{
 
+  /* Rectangle 15: */
+background-image: -webkit-linear-gradient(42deg, #089677 2%, #00BD7F 100%);
+background-image: -o-linear-gradient(42deg, #089677 2%, #00BD7F 100%);
+background-image: linear-gradient(132deg, #089677 2%, #00BD7F 100%);
+}
 /*header video container design starts here*/
 .header-video-container{
   height: 520px;
@@ -177,9 +190,6 @@ h1,h2,h3,h4,h5{
   overflow: hidden;
   display: flex;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(255,255,255,1);
 }
 
 .jumbotron-container{
@@ -192,17 +202,15 @@ h1,h2,h3,h4,h5{
   font-size: 3.5em;
   line-height: 1.3em;
   font-weight: 900;
-  color: rgba(50,50,50,1);
+  color: rgba(255,255,255,1);
 }
-
 .input-get-start-btn{
   height: 58px;
   border-radius: 2px;
   align-items: center;
   color: white;
-  background-color: rgba(40,189,147,1);
+  background-color: rgba(16,140,116,1);
   transition: all 0.2s ease-in;
-  /* submit-btn: */
   box-shadow: 0 16px 18px 0 rgba(0,0,0,0.13), 0 4px 6px 0 rgba(0,0,0,0.16);
 
 }
@@ -218,12 +226,11 @@ h1,h2,h3,h4,h5{
   transition: all 0.2s ease-in;
 }
 .form-control{
-  border: 1px solid rgba(85,85,85,0.6);
+  border: 1px solid rgba(45, 196, 161, 1);
   background-color: rgba(250,250,250,1);
   transition: all 0.2s ease-in;
 }
 .form-control:focus {
-  border-color: rgba(0,170,140,1);
   transition: all 0.2s ease-in;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0), 0 0 8px rgba(255, 0, 0, 0);
 }
@@ -236,11 +243,12 @@ h1,h2,h3,h4,h5{
 }
 .jumbotron-container p{
   margin-top: 12px;
-  color: rgba(100,100,100,1);
+  color: rgba(255,255,255,1);
   font-weight: 400;
 }
 .hero-input-info-text{
-  color: rgba(100,100,100,1);
+  padding:12px 0;
+  color: rgba(250,250,250,1);
 }
 
   /*###Hero Logo Container Designs Here###*/
@@ -274,12 +282,12 @@ h1,h2,h3,h4,h5{
 }
 .feature-hero-image-1{
   position: relative;
-  top: 110px;
+  top: 210px;
 }
 
 /*****#######Stats Container Style######*******/
 .stats-container{
-  background-color: rgba(44,120,204,1);
+  background-color: rgba(3, 173, 136, 1);
   text-align: center;
 }
 .stats-container h2{
@@ -296,15 +304,15 @@ h1,h2,h3,h4,h5{
   font-size: 1.2em;
 }
 .stats-column-1{
-  background-color: rgba(44,120,204,1);
+  background-color: rgba(3, 173, 136, 1);
   padding: 30px 30px;
 }
 .stats-column-2{
-  background-color: rgba(40,111,189,1);
+  background-color: rgba(8, 156, 123, 1);
   padding: 30px 30px;
 }
 .stats-column-3{
-  background-color: rgba(44,120,204,1);
+  background-color: rgba(3, 173, 136, 1);
   padding: 30px  30px;
 }
 /*****#######Benefits Section Container Style######*******/
@@ -313,6 +321,8 @@ h1,h2,h3,h4,h5{
 }
 .benefits-content-row{
   padding:56px 0;
+  display: flex;
+  align-items: center;
 }
 .benefits-transactional-row{
   border-top: 1px solid rgba(85,85,85,0.2);
@@ -325,10 +335,10 @@ h1,h2,h3,h4,h5{
 /*Testimonial Container Style===========
 ========================================*/
 /*Testimonial Carousel*/
+
 /* carousel */
 
 .media-carousel{
-
   margin-bottom: 0;
   padding: 0 24px 16px 24px;
 }
@@ -348,6 +358,7 @@ h1,h2,h3,h4,h5{
 }
 .media-carousel .carousel-control span{
   font-size: 1em;
+  font-weight: 400;
 }
 .media-carousel .carousel-control.right
 {
@@ -361,12 +372,10 @@ h1,h2,h3,h4,h5{
   bottom: 0px;
   margin-right: -19px;
 }
-
-
 /* End carousel */
 /*Carousel Ends here*/
 .testimonial-container{
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(248,248,248,1);
 }
 .testimonial-main-content{
   margin-top: 6px;
@@ -378,7 +387,7 @@ h1,h2,h3,h4,h5{
 box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
 }
 .quote{
-  color: rgba(230,230,230,1);
+  color: rgba(40,189,147,.3);
 }
 .quote-left i{
   margin-top: 24px;
@@ -416,7 +425,8 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
   margin-bottom: 48px;
 }
 .client-details h3{
-  color: rgba(102,102,102,1);
+  color: rgba(47,189,147,1);
+  font-weight: 600;
 }
 .client-details p{
   color:rgba(150,150,150,1);
@@ -467,8 +477,17 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 }
 /*******Final Call to Action Style Here************/
 .final-call-to-action-fluid-container{
-  background-color: rgba(250, 250, 250, 1);
+  background-color: rgba(0, 189, 147, 1);
   padding: 48px 0;
+}
+.final-call-to-action-fluid-container h2{
+  color: rgba(255,255,255,1);
+}
+.final-call-to-action-fluid-container p{
+  color: rgba(255,255,255,1);
+}
+.final-call-to-action-fluid-container .btn{
+  background-color: rgba(33, 167, 129, 1);
 }
 /*****#######Footer Container Style Starts Here######*******/
 .footer-fluid-container{
@@ -526,6 +545,27 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
   color: rgba(105,105,105,1);
   font-size: 0.9em;
 }
+
+/*+++++++++++++++++++++++++++++++++++++++++
+              Pricing Page
+++++++++++++++++++++++++++++++++++++++++++*/
+.inner-page-header-container{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+/*table */
+.table-bordered > tbody > tr > td {
+  padding:16px 12px;
+  font-weight: 600;
+  color: rgba(100,100,100,1);
+}
+.table-bordered > thead > tr > th{
+  color: rgba(255,255,255,1);
+  font-weight: 900;
+  font-size: 1.6em;
+  padding:36px 12px;
+  background-color: rgba(40,189,147,1);
+}
 /*****#######Mobile Device Style######*******/
 @media only screen and (min-device-width : 320px) and (max-device-width : 750px) {
   /*main page*/
@@ -549,11 +589,6 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  /*hire me page*/
-  .hire-me-column-container{
-    display:flex;
-    align-items:center;
-  }
   .navbar-default{
     background-color: rgba(250,250,250,1);
     text-align: center;
@@ -574,52 +609,5 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
   .more-btn{
     margin-top: -30px;
   }
-
-/*****#######Xs Screen Style######*******/
-@media only screen and (min-width : 320px) and (max-width : 767px) {
-
-  /*hire me page*/
-  .hire-me-column-container{
-    display: block;
-    align-items: center;
-  }
-  #navbar-menu-list{
-    background-color: rgba(250,250,250,1);
-  }
-  .dropdown-menu li a{
-    font-size: 1em;
-    margin-top: 20px;
-  }
-  /*Animation Works Container*/
-.cute-margin-top-xs-device{
-  margin-top: 30px;
-}
-  /*****#####Testimonial Container Style******######*/
-  .testimonial-content-alignment{
-    padding-top: 15px;
-    transition: all .3s ease-out;
-    text-align: center;
-  }
-  .testimonial-logo-align{
-    display:inline-block;
-  }
-  /*****#####Let's talk about Container Style******######*/
-  .lets-talk-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-}
-/*****#######Sm Screen Style######*******/
-@media only screen and (min-width : 768px) and (max-width : 991px){
-  /*****#####Testimonial Container Style******######*/
-  .testimonial-content-alignment{
-    padding-top: 15px;
-    text-align: center;
-    transition: all .3s ease-out;
-  }
-
 
 }
