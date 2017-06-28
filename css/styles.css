@@ -4,15 +4,39 @@
 
 a:hover{
   text-decoration: none;
+  color: rgba(40,189,147,1);
+  transition: all 0.3s ease-in;
+}
+a span{
+  transition: all 0.2s ease-in;
+}
+a:hover span{
+  padding-left: 3px;
+  transition: all 0.2s ease-in;
 }
 a{
+  font-weight: 700;
   color: rgba(0,189,147,1);
+  transition: all 0.3s ease-in;
 }
-.text-link{
-  font-size: 1.3em;
+.green-btn{
+  background-color: rgba(40,189,147,1);
+  border-radius: 2px;
+  color: white;
+  padding:12px 24px;
+  transition: all 0.2s ease-in;
+  margin-top: 12px;
+  font-weight: 700;
+}
+.green-btn:hover{
+  background-color: rgba(0,189,147,1);
+  border-radius: 2px;
+  color: white;
+  padding:12px 24px;
+  transition: all 0.2s ease-in;
 }
 p{
-
+  color: rgba(102,102,102,1);
   font-size: 1.3em;
   line-height: 1.6em;
 }
@@ -20,41 +44,7 @@ p{
   color: rgba(0,189,147,1);
   border-bottom: 2px solid rgba(0,189,147,1);
 }
-.hire-me-column-container{
-  display: flex;
-  align-items: center;
-}
-/*About Page*/
-.about-navbar{
-  background-color: rgba(250,250,250,1);
-}
-.about-container{
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-.about-content-section h1{
-  color: rgba(80,80,80,1);
-}
-.about-content-para-header{
-  font-weight: 300;
-  line-height: 1.5em;
-  color: rgba(90,90,90,1);
-}
-/*Hire Me Page*/
-.contact-form-container{
-  margin-top: 30px;
-}
-.hire-me-content h3,h2{
-  font-weight: 300;
-  line-height: 1.5em;
-  color: rgba(90,90,90,1);
-}
-.mail-id-input{
-  width: 170px;
-}
-.contact-form-column{
-  margin-top: 25px;
-}
+
 body{
   font-family:Lato,"Catamaran",Roboto,sans-serif;
   background-color: rgb(255, 255, 255);
@@ -228,12 +218,12 @@ h1,h2,h3,h4,h5{
   transition: all 0.2s ease-in;
 }
 .form-control{
-  border: 1px solid rgba(85,85,85,0.3);
-  background-color: rgba(245,245,245,1);
+  border: 1px solid rgba(85,85,85,0.6);
+  background-color: rgba(250,250,250,1);
   transition: all 0.2s ease-in;
 }
 .form-control:focus {
-  border-color: rgba(85,85,85,.5);
+  border-color: rgba(0,170,140,1);
   transition: all 0.2s ease-in;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0), 0 0 8px rgba(255, 0, 0, 0);
 }
@@ -255,7 +245,7 @@ h1,h2,h3,h4,h5{
 
   /*###Hero Logo Container Designs Here###*/
 .hero-logo-container{
-  background-color: rgba(240,240,240,1);
+  background-color: rgba(245,245,245,1);
   padding:24px 0;
 }
 /*****#######Features Container Styles Starts Here######*******/
@@ -270,20 +260,6 @@ h1,h2,h3,h4,h5{
 }
 .feature-lists h4{
   font-weight: 700;
-}
-.feature-lists p{
-  color: rgba(102,102,102,1);
-  font-size: 1.1em;
-  line-height: 1.5em;
-}
-.feature-list-link{
-  font-weight: 700;
-  transition: all 0.2s ease-in;
-  text-decoration: none;
-}
-.feature-list-link:hover{
-  transition: all 0.2s ease-in;
-  padding-left: 2px;
 }
 .feature-list-content{
   margin-bottom: 40px;
@@ -340,46 +316,69 @@ h1,h2,h3,h4,h5{
 }
 .benefits-transactional-row{
   border-top: 1px solid rgba(85,85,85,0.2);
-  border-bottom: 1px solid rgba(85,85,85,0.2);
 }
 .benefits-column-content h2{
   font-weight: 500;
   color: rgba(85,85,85,1);
 }
-.benefits-column-content p{
-  color: rgba(102,102,102,1);
-  font-size: 1.1em;
-  line-height: 1.5em;
+
+/*Testimonial Container Style===========
+========================================*/
+/*Testimonial Carousel*/
+/* carousel */
+
+.media-carousel{
+
+  margin-bottom: 0;
+  padding: 0 24px 16px 24px;
 }
-.try-it-btn{
-  background-color: rgba(40,111,189,1);
-  border-radius: 2px;
-  color: white;
-  padding:12px 24px;
-  transition: all 0.2s ease-in;
-  margin-top: 12px;
+/* Previous button  */
+.media-carousel .carousel-control.left
+{
+  left: -12px !important;
 }
-.try-it-btn:hover{
-  background-color: rgba(34,94,160,1);
-  border-radius: 2px;
-  color: white;
-  padding:12px 24px;
-  transition: all 0.2s ease-in;
+/* Next button  */
+.media-carousel .carousel-control{
+  background-image: none;
+  background: none repeat scroll 0 0 ;
+  color: rgba(140,140,140,1);
+  height: 40px;
+  width : 40px;
+  margin-top: 160px
 }
-/*****#####Testimonial Container Style******######*/
+.media-carousel .carousel-control span{
+  font-size: 1em;
+}
+.media-carousel .carousel-control.right
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+
+/* End carousel */
+/*Carousel Ends here*/
 .testimonial-container{
-  background-color: rgba(250,250,250,1);
+  background-color: rgba(255,255,255,1);
 }
 .testimonial-main-content{
+  margin-top: 6px;
   position: relative;
-  background-color: white;
+  background-color: rgba(252,252,252,1);
   border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
--moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
 }
 .quote{
-  color: rgba(200,200,200,1);
+  color: rgba(230,230,230,1);
 }
 .quote-left i{
   margin-top: 24px;
@@ -423,12 +422,24 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
   color:rgba(150,150,150,1);
 }
 .client-full-logos-row{
-  background-color: rgba(245,245,245,1);
-  padding:16px 0;
+  background-color: rgba(250,250,250,1);
+  padding:32px 0;
+}
+.client-full-logos-row p{
+  padding-bottom:32px;
+}
+.client-full-logos-row img{
+  opacity:0.7;
+  transition: all 0.2s ease-in;
+}
+.client-full-logos-row img:hover{
+  opacity: 1;
+  transition: all 0.2s ease-in;
 }
 .client-logos-row{
   margin: 24px 0;
 }
+
 /*****#####Get Support Container Style******######*/
 .get-support-container{
   margin-top: 24px;
@@ -456,19 +467,12 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 }
 /*******Final Call to Action Style Here************/
 .final-call-to-action-fluid-container{
-  background-color: rgba(40,54,148,1);
+  background-color: rgba(250, 250, 250, 1);
   padding: 48px 0;
-}
-.final-call-to-action-fluid-container h2{
-  color: rgba(255,255,255,1);
-  font-weight: 400;
-}
-.final-call-to-action-fluid-container p{
-  color:rgba(255,255,255,1);
 }
 /*****#######Footer Container Style Starts Here######*******/
 .footer-fluid-container{
-  background-color: rgba(240,240,240,1);
+  background-color: rgba(245,245,245,1);
 }
 .footer-content-row{
   border-bottom: 1px solid rgba(150,150,150,1);

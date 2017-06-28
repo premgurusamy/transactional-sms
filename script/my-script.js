@@ -57,4 +57,25 @@ $(function() {
 });
 
 
-//contact form
+/* ===============
+Testimonial carousel
++++++++++++++++++++++*/
+$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: 10000,
+
+  });
+});
+
+/*===================
+FAQ's
+++++++++++++++++++*/
+//hide answer first
+$(".answer").hide();
+//click answer open
+$(".question").click(function(){
+  //$(this).next().toggle();
+   $(this).next().slideToggle(400,"swing");
+    $(this).find("i").toggleClass("fa-chevron-right fa-minus");
+});
