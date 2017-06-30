@@ -672,7 +672,7 @@ box-shadow: 1px 12px 32px -1px rgba(0,0,0,0.2);
 .contact-label h1{
   font-weight: 900;
   font-size: 5em;
-  color: rgba(0,0,0,.02);
+  color: rgba(0,0,0,.00);
   z-index: -1;
 }
 .contact-content{
