@@ -79,3 +79,26 @@ $(".question").click(function(){
    $(this).next().slideToggle(400,"swing");
     $(this).find("i").toggleClass("fa-chevron-right fa-minus");
 });
+
+/* ===============
+About Page Profile Hover
++++++++++++++++++++++*/
+
+jQuery(document).ready(function() {
+    $('.profile-details').hide();
+    jQuery('.profile-column').hover(function() {
+        jQuery(this).find('div:first').show("200")
+    }, function() {
+        jQuery(this).find('div:first').hide();
+    });
+});
+
+
+
+
+
+
+
+
+
+/**/
