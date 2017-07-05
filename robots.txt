@@ -1,0 +1,3 @@
+Sitemap: https://www.transactionalsms.com/sitemap.xml
+User-agent: *
+Disallow:
